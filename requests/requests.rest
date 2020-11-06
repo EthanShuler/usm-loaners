@@ -1,0 +1,23 @@
+GET http://localhost:3001/api/loaners
+###
+POST http://localhost:3001/api/loaners
+Content-Type: application/json
+
+{
+    "deviceType": "laptop",
+    "isCheckedOut": false,
+    "deviceName": "US-checkout-1",
+    "division": "US"
+} 
+###
+PUT http://localhost:3001/api/loaners/5fa56ab3c1724d648cd5ce3b
+Content-Type: application/json
+
+{
+    "deviceType": "laptop",
+    "isCheckedOut": true,
+    "deviceName": "US-checkout-1",
+    "division": "US"
+} 
+###
+DELETE http://localhost:3001/api/loaners/5fa56ab3c1724d648cd5ce3b
