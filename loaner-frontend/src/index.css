@@ -1,0 +1,17 @@
+table, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.checkedOut {
+    background-color: red;
+}
+
+.notCheckedOut {
+    background-color: green;
+}
+
+.tableHeader {
+    background-color: darkgray;
+    color: white;
+}
