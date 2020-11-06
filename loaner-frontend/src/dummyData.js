@@ -1,6 +1,7 @@
 
 const dummyData = [
     {
+        id: 0,
         deviceType: 'laptop',
         isCheckedOut: true,
         deviceName: 'US-checkout-1',
@@ -10,12 +11,15 @@ const dummyData = [
         division: 'US'
     },
     {
+        id: 1,
         deviceType: 'older laptop charger',
         isCheckedOut: false,
         dateCheckedOut: new Date(),
-        division: 'MS'
+        division: 'MS',
+        personBorrowing: ''
     },
     {
+        id: 2,
         deviceType: 'iPad',
         isCheckedOut: true,
         deviceName: 'LS-iPad-1',

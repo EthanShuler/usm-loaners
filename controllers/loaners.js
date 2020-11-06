@@ -26,7 +26,7 @@ loanersRouter.post('/', (request, response, next) => {
         isCheckedOut: body.isCheckedOut,
         deviceName: body.deviceName,
         description: body.description,
-        dateCheckedOut: new Date(),
+        dateCheckedOut: new Date().toLocaleString(),
         personBorrowing: body.personBorrowing,
         division: body.division
     })

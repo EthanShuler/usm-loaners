@@ -8,7 +8,7 @@ const loanerSchema = new mongoose.Schema({
     },
     isCheckedOut: {
         type: Boolean,
-        required: true
+        default: false
     },
     deviceName: {
         type: String
@@ -17,15 +17,16 @@ const loanerSchema = new mongoose.Schema({
         type: String
     },
     dateCheckedOut: {
-        type: Date
+        type: String
     },
     personBorrowing: {
-        type: String
+        type: String,
+        default: ''
     },
     division: {
         type: String,
-        required: true,
-        enum: ['LS', 'MS', 'US']
+        enum: ['LS', 'MS', 'US'],
+        default: 'US'
     }
 })
 
